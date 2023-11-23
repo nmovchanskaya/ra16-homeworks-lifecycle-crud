@@ -8,7 +8,7 @@ export const NoteList = (props: {notes: NoteType[], onDelete: (id: number) => vo
         <>
             {notes.map((item: NoteType) => {
                 return (
-                    <div className="note">
+                    <div className="note" key={item.id}>
                         <div className="id hidden">
                             {item.id}
                         </div>
